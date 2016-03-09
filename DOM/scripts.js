@@ -28,19 +28,14 @@ function changeColorPara() {
 }
 
 
-// function addFriends() {
-//     var cList = $('ul')
-//     $.each(friends, function (i) {
-//         var li = $('<li/>')
-//             .addClass('ui-menu-item')
-//             .attr('role', 'menuitem')
-//             .appendTo(cList);
-//         var a = $('<a/>')
-//             .addClass('ui-all')
-//             .text(this)
-//             .appendTo(li);
-//     });
-// }
+function addFriends() {
+    
+    var cList = document.getElementById('friendslist');
+    for (var index = 0; index < friends.length; index++) {
+        var friend = friends[index];
+        cList.innerHTML += '<li>'+friend+'</li>';
+    }
+}
 
 function addButton() {
     var button = document.createElement("input");
