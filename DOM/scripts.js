@@ -31,9 +31,9 @@ function showMessage() {
         alert(message);
 }
 
-// function addSpan() {
-//     $("div.span").append('<span>Eduardo Lopez Anta</span>');
-// }
+function addSpan() {
+    document.getElementById('add-span').innerHTML = '<span>Eduardo Lopez Anta</span>';
+}
 
 // function addFriends() {
 //     var cList = $('ul')
