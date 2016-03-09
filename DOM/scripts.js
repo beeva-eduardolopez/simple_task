@@ -19,6 +19,14 @@ function changeColor() {
 function returnColor() {
     document.getElementById('change-color').style.backgroundColor = '#000000';
 }
+function changeColorPara() {
+    var randomRed = Math.floor(Math.random() * 255);
+    var randomGreen = Math.floor(Math.random() * 255);
+    var randomBlue = Math.floor(Math.random() * 255);
+    var randomColor = "rgb(" + randomRed + "," + randomGreen + "," + randomBlue + ")";
+    document.getElementById('para').style.color = randomColor;
+}
+
 
 // function addFriends() {
 //     var cList = $('ul')
