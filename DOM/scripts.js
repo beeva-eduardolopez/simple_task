@@ -1,4 +1,4 @@
-// var friends = ['Javi', 'Alvaro', 'Juan', 'Jesus', 'Alicia', 'Marta', 'Diego', 'Michael', 'Kevin', 'David'];
+var friends = ['Javi', 'Alvaro', 'Juan', 'Jesus', 'Alicia', 'Marta', 'Diego', 'Michael', 'Kevin', 'David'];
 
 // $(document).ready(function () {
 //     var button = $('<input id ="button" type="button" class="btn btn-primary" value="Button Load Auto"/>');
@@ -26,17 +26,10 @@
 
 // });
 
-// $(document).on("click", "#button", function () {
-//     alert('button clicked!');
-// });
-
-
-// function showMessage() {
-//     $("#buttonTextArea").click(function () {
-//         var message = $("textarea#fmessage").val();
-//         alert(message);
-//     });
-// }
+function showMessage() {
+        var message =document.getElementById('fmessage').value
+        alert(message);
+}
 
 // function addSpan() {
 //     $("div.span").append('<span>Eduardo Lopez Anta</span>');
@@ -59,7 +52,7 @@
 function addButton() {
     var button = document.createElement("input");
     button.type = "button";
-    button.value = "Button";
+    button.value = "Button On Load";
     button.setAttribute("onclick", "alertMesage()");
     document.body.appendChild(button);
 
